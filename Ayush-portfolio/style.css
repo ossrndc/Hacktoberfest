@@ -6,13 +6,13 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color:rgb(255, 255, 255);
+    background-color:white;
 }
 /* Header */
 header {
     display:flex;
     height: 100.84vh;
-    background-color:rgb(234,230,230);
+    background-color:white;
     color: #fff;
     padding: 3.361vh 0;
     justify-content:space-evenly;
@@ -20,6 +20,9 @@ header {
 #header .header-container .header-text{
     color:black;
     text-align: justify;
+}
+.header-text pre{
+    font-size: 1em;
 }
 #header{
     display: flex;
@@ -31,9 +34,9 @@ header {
     width: 23.4375vw;
     margin: 20.168vh 7.8125vw 0 14.0625vw;
     border-radius: 50%;
-    background-color: #2fe8e5;
+    background-color: #737a7a;
     box-shadow: 2px 4px 2px 2px #bcfaf9;
-    background-image: url(ujjwal.png);
+    background-image: url(images/ayush.jpg);
     background-size: cover;
     transition: all 0.3s ease-in-out;
 }
@@ -41,19 +44,17 @@ header {
     transform: scale(1.5);
 }
 /* Navigation Bar */
-nav{
-    display: flex;
+.links nav{
+    display: inline;
     height: 5.042vh;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.header-container nav ul{
-    position:absolute;
-}
 
 nav ul li{
-    display: inline-block;
+    display: inline;
     list-style: none;
     margin: 1.68vh 1.5625vw;
 }
@@ -102,7 +103,7 @@ p {
     line-height: 1.5;
     color: #555;
 }
-/* Sections */
+/*Skill Section */
 
 .skill-container{
     height: 100.84vh;
@@ -110,51 +111,69 @@ p {
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(234,230,230);
+    background-color: white;
+}
+.abt-me{
+    height: 80vh;
+    width: 80vw;
+    color: black;
+    margin-top: 15vh;
+    border: 1px solid black;
+}
+.abt-me-one{
+    /* width: 30vw; */
+    display: inline-flex;
+    align-items: flex-start;
+    color: black;
+    margin: 2.7vh 6vw;
+}
+#about-skill{
+    /* height: 48.76vh; */
+    /* width: 30.78vw; */
+    margin-right: 7vw;
+}
+#about-skill ul li{
+    margin-top: 2vh;
 }
 
-.box{
-    height: 37.8151vh;
-    width: 17.5781vw;
-    margin: 13.445vh 3.20vw 0px 5.0781vw;
+label{
+    /* margin-right: 0.5vw; */
+    color:black;
+} 
+progress{
+    color:black;
+    width: 12vw;
+    margin-top: 2vh;
+    margin-right: 4.2vw;
 }
-#html{
-    background-image: url(webdev.jpg);
+
+#about-image{
+    height: 45.76vh;
+    width: 26.90vw;
+    background-image: url(/images/html1.jpg);
     background-size: cover;
-    border-radius: 10%;
-    box-shadow: 1px 2px 3px 2px black;
+    border-radius: 18%;
 }
-#webdev{
-    background-image: url(html1.jpg);
-    background-size: cover;
-    border-radius: 10%;
-    box-shadow: 1px 2px 3px 2px black;
-}
-#general{
-    background-image: url(others.jpg);
-    background-size: cover;
-    border-radius: 10%;
-    box-shadow: 1px 2px 3px 2px black;
-}
-li{
+.abt-me-two{
+    display: block;
     color: black;
+    margin: 3vh 7vw;
+}
+.abt-me-two ul li{
+    color: black;
+    font-size: 16px;
     list-style: none;
-    text-align: center;
 }
-.box{
-    transition: all 0.3s ease-in-out;
-}
-.box:hover{
-    transform: scale(0.9);
-}
+
+
+/* Education section */
 #education{
-    background-color: rgb(234,230,230);
+    background-color: white;
     height: 100.84vh;
 }
 #education .container{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:start; */
 }
 .item{
     height: 37.8151vh;
@@ -162,19 +181,19 @@ li{
     margin: 13.445vh 3.20vw 0px 5.0781vw;
 }
 #one{
-    background-image: url(aktu.jpg);
+    background-image: url(images/aktu.jpg);
     background-size: cover;
     border-radius: 10%;
     box-shadow: 1px 2px 3px 2px black;
 }
 #two{
-    background-image: url(12th.jpg);
+    background-image: url(images/12th.jpg);
     background-size: cover;
     border-radius: 10%;
     box-shadow: 1px 2px 3px 2px black;
 }
 #three{
-    background-image: url(10th.jpg);
+    background-image: url(images/10th.jpg);
     background-size: cover;
     border-radius: 10%;
     box-shadow: 1px 2px 3px 2px black;
@@ -194,7 +213,7 @@ li{
 #project  {
     height: 100.84vh;
     text-align: left;
-    background-color:rgb(234,230,230);
+    background-color:white;
     text-align: center;
     padding-left: 1.1718vw;
 }
@@ -209,7 +228,7 @@ li{
     margin-top: 16.806vh;
     margin-right: 4.6875vw;
     border-radius: 10px;
-    background-image: url(project.jpg);
+    background-image: url(images/project.jpg);
     background-size: cover;
 }
 .project-link{
@@ -227,7 +246,7 @@ li{
 }
 /* Contact section */
 #contact{
-    background-color: rgb(234,230,230);
+    background-color:white;
     display: flex;
     height: 97.4789vh;
     justify-content: space-around;
@@ -243,7 +262,7 @@ pre{
 #contact .container{
     height: 89.075vh;
     border-radius: 10px;
-    background-color:rgb(119, 232, 255);
+    background-color:rgb(210,210,210);
     box-shadow: 1px 4px 2px 2px black;
 }
 #contact .container p{
@@ -254,7 +273,7 @@ pre{
     height: 16.806vh;
     width: 15.625vw;
     margin-left: 0.9375vw;
-    background-image: url(contact.jpg);
+    background-image: url(images/contact.jpg);
     background-size: cover;
 }
 #contact .section {
@@ -269,13 +288,13 @@ pre{
     width: 34.375vw;
     display: inline-block;
     text-align: left;
-    background-color:rgb(119, 232, 255);
+    background-color:rgb(210,210,210);
     border: 2px sloid black;
     box-shadow: 3px 4px 2px 3px black;
     border-radius: 5%;
 }
 .contact-form span{
-    color:#037471;
+    color:#012359;
 }
 .contact-form .form{
     color: black;
@@ -294,7 +313,7 @@ pre{
     color: black;
 }
 textarea{
-    resize: none;
+    resize:none;
 }
 button{
     box-shadow: 1px 1px 1px 1px black;
