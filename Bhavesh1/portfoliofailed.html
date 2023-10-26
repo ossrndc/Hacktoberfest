@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-Bhavesh Gautam</title>
+</head>
+<style>
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: grey;
+        height: 53px;
+        margin: -16px 0px;
+    }
+
+
+    nav ul li {
+        float: right;
+        list-style: none;
+        margin-top: 4px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 7px 23px;
+    }
+
+    nav ul li a:hover {
+        background-color: red;
+        color: white;
+        border-radius: 40px;
+    }
+
+    .home::before {
+        content: "";
+        position: absolute;
+        background-image: url(flower1.jpg);
+        background-position: 70%;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        margin-top: -10px;
+    }
+
+    #intro {
+        font-size: 34px;
+        border: 1px;
+        width: 19%;
+        margin-top: 350px;
+        margin-left: 950px;
+    }
+    .aboutme{
+        margin-top: 900px;
+    }
+</style>
+
+<body>
+    <nav class="navbar">
+        <div>
+            <div style="color: white; float: left; margin-left: 35px; margin-top: 6px;">Portfolio</div>
+            <ul>
+                <li><a href="" style="margin-left: -2px; margin-right: 50px;">Contact</a></li>
+                <li><a href="" style="margin-left: -2px; margin-right: 10px;">Skill</a></li>
+                <li><a href="" style="margin-left: -2px; margin-right: 10px;">About</a></li>
+                <li><a href="" style="margin-left: -2px; margin-right: 10px;">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="home">
+        <p id="intro">Hi, My name is Bhavesh Gautam, I am a trainee at OSS</p>
+    </section>
+    <div class="aboutme">
+        <h1>About me</h1>
+        <p>Hi, My name is <b>Bhavesh Gautam</b> and I am from <b>Mathura</b>. I am pursuing btech from <b>computer
+                science and engineering</b> branch at <b>Ajay kumar Garg Engineering College</b>.I have intermediate
+            knowledge of <b>C++</b> and <b>HTML</b> and beginner knowledge of <b>CSS</b>. Currently i am learning
+            <b>Javascript</b> along with <b>Backend web development</b><br>I did my high school{Passout: 2021} and
+            senior secondary school(Passout: 2022) from <b>Kanha Makhan Public School</b>.</p>
+    </div>
+</body>
+
+</html>
