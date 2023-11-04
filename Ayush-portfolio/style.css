@@ -6,20 +6,25 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color:rgb(255, 255, 255);
+    background-color:white;
 }
 /* Header */
 header {
     display:flex;
-    height: 37.5rem;
-    background-color:rgb(234,230,230);
+    height: 100.84vh;
+    background-color:white;
     color: #fff;
-    padding: 20px 0;
+    padding: 3.361vh 0;
     justify-content:space-evenly;
 }
-#header .header-container .header-text{
-    color:black;
+#header .header-container .header-text {
+    width: 29vw;
+    color: black;
     text-align: justify;
+    height: 20vh;
+}
+.header-text pre{
+    font-size: 1em;
 }
 #header{
     display: flex;
@@ -27,40 +32,36 @@ header {
     justify-content:space-between;
 }
 #header #header-photo{
-    height: 18.75rem;
-    width: 18.75rem;
-    margin: 120px 100px 0px 180px;
+    height: 40.42vh;
+    width: 18.4375vw;
+    margin: 14.168vh 18.8125vw 0px 8.0625vw;
     border-radius: 50%;
-    background-color: #2fe8e5;
+    background-color: #737a7a;
     box-shadow: 2px 4px 2px 2px #bcfaf9;
-    background-image: url(ujjwal.png);
+    background-image: url(images/ayush.jpg);
     background-size: cover;
-    transition: all 0.3s ease-in-out;
+    /* transition: all 0.3s ease-in-out; */
 }
-#header #header-photo:hover{
-    transform: scale(1.5);
-}
+
 /* Navigation Bar */
-nav{
-    display: flex;
-    height: 30px;
+.links nav{
+    display: inline;
+    height: 5.042vh;
+    width: 100vw;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.header-container nav ul{
-    position:absolute;
-}
 
 nav ul li{
-    display: inline-block;
+    display: inline;
     list-style: none;
-    margin: 10px 20px;
+    margin: 1.68vh 1.5625vw;
 }
 nav ul li a{
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     position: relative;
     transition: all 0.2s linear;
 }
@@ -86,95 +87,169 @@ h1, h2, h3 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1 {
-    font-size: 60px;
+    font-size: 3.75rem;
     letter-spacing: 2px;
 }
 h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 1.875rem;
+    margin-bottom: 5.042vh;
 }
 h3 {
-    font-size:20px;
-    margin-bottom: 10px;
+    font: size 1.25rem;;
+    margin-bottom: 1.680vh;
 }
 p {
-    font-size: 15px;
+    font-size: 0.938rem;
     line-height: 1.5;
     color: #555;
 }
-/* Sections */
+/*Skill Section */
 
 .skill-container{
-    height: 37.5rem;
-    padding-left: 20px;
+    height: 100.84vh;
+    padding-left: 1.5625vw;
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(234,230,230);
+    background-color: white;
+}
+.abt-me{
+    height: 80vh;
+    width: 80vw;
+    color: black;
+    margin-top: 15vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 3px rgb(211, 211, 211);
+}
+.abt-me-one{
+    /* width: 30vw; */
+    display: inline-flex;
+    align-items: flex-start;
+    color: black;
+    margin: 2.7vh 6vw;
+}
+#about-skill{
+    /* height: 48.76vh; */
+    /* width: 30.78vw; */
+    margin-right: 7vw;
+}
+#about-skill ul li{
+    margin-top: 2vh;
 }
 
-.box{
-    height: 14.063rem;
-    width: 14.063rem;
-    margin: 80px 41px 0px 65px;
+label{
+    /* margin-right: 0.5vw; */
+    color:black;
+} 
+progress{
+    color:black;
+    width: 12vw;
+    margin-top: 2vh;
+    margin-right: 4.2vw;
 }
-#html{
-    background-image: url(webdev.jpg);
+
+#about-image{
+    height: 45.76vh;
+    width: 26.90vw;
+    background-image: url(/images/html1.jpg);
     background-size: cover;
-    border-radius: 10%;
-    box-shadow: 1px 2px 3px 2px black;
+    border-radius: 18%;
+    box-shadow: black 4px 4px 6px 3px;
 }
-#webdev{
-    background-image: url(html1.jpg);
-    background-size: cover;
-    border-radius: 10%;
-    box-shadow: 1px 2px 3px 2px black;
-}
-#general{
-    background-image: url(others.jpg);
-    background-size: cover;
-    border-radius: 10%;
-    box-shadow: 1px 2px 3px 2px black;
-}
-li{
+.abt-me-two{
+    display: block;
     color: black;
+    margin: 3vh 7vw;
+}
+.abt-me-two ul li{
+    color: black;
+    font-size: 16px;
     list-style: none;
+}
+
+
+/* Education section */
+
+.edu-content-left{
+    height: 14vh;
+    width: 36vw;
+    background-color: black;
+    position: relative;
+    left: 11%;
+    border: 1px solid black;
+    border-radius: 45px;
+    margin-top: 15px;
+}
+.edu-content-right{
+    height: 14vh;
+    width: 36vw;
+    background-color: black;
+    position: relative;
+    right: -52%;
+    border: 1px solid black;
+    border-radius: 45px;
+}
+
+.vertical-line{
+    height: 100vh;
+    width: 0.5vw;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+}
+
+.edu-content-left h3{
     text-align: center;
+    color: #1877F2;
+    font-size: 1.2rem;
 }
-.box{
-    transition: all 0.3s ease-in-out;
+
+.edu-content-left p{
+    text-align: center;
+    color: #f4f1f1;
+    font-size: 0.8rem;
 }
-.box:hover{
-    transform: scale(0.9);
+.edu-content-right h3{
+    text-align: center;
+    color: #1877F2;
+    font-size: 1.2rem;
 }
-#education{
-    background-color: rgb(234,230,230);
-    height: 37.5rem;
+
+.edu-content-right p{
+    text-align: center;
+    color:  #f4f1f1;
+    font-size: 0.8rem;
+}
+/* #education{
+    background-color: white;
+    height: 100.84vh;
 }
 #education .container{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content:start; */
 }
 .item{
-    height: 14.063rem;
-    width: 14.063rem;
-    margin: 80px 41px 0px 65px;
+    height: 37.8151vh;
+    width: 17.5781vw;
+    margin: 13.445vh 3.20vw 0px 5.0781vw;
 }
 #one{
-    background-image: url(aktu.jpg);
+    background-image: url(images/aktu.jpg);
     background-size: cover;
     border-radius: 10%;
     box-shadow: 1px 2px 3px 2px black;
 }
 #two{
-    background-image: url(12th.jpg);
+    background-image: url(images/12th.jpg);
     background-size: cover;
     border-radius: 10%;
     box-shadow: 1px 2px 3px 2px black;
 }
 #three{
-    background-image: url(10th.jpg);
+    background-image: url(images/10th.jpg);
     background-size: cover;
     border-radius: 10%;
     box-shadow: 1px 2px 3px 2px black;
@@ -188,15 +263,17 @@ li{
 .education-item-1 ,.education-item-2 ,.education-item-3 {
     text-align: center;
     color: black;
-}
+} */
+
+
 
 /* Projects section */
 #project  {
-    height: 37.5rem;
+    height: 100.84vh;
     text-align: left;
-    background-color:rgb(234,230,230);
+    background-color:white;
     text-align: center;
-    padding-left: 15px;
+    padding-left: 1.1718vw;
 }
 #project .container{
     display: flex;
@@ -204,16 +281,16 @@ li{
 }
 
 .project-item{
-    height: 350px;
-    width: 350px;
-    margin-top: 100px;
-    margin-right: 60px;
+    height: 58.8235vh;
+    width: 27.343vw;
+    margin-top: 16.806vh;
+    margin-right: 4.6875vw;
     border-radius: 10px;
-    background-image: url(project.jpg);
+    background-image: url(images/project.jpg);
     background-size: cover;
 }
 .project-link{
-    margin-top: 100px;
+    margin-top: 16.806vh;
 }
 .project-link a{
     color: black;
@@ -227,55 +304,35 @@ li{
 }
 /* Contact section */
 #contact{
-    background-color: rgb(234,230,230);
+    background-color:white;
     display: flex;
-    height: 580px;
+    height: 97.4789vh;
     justify-content: space-around;
 }
 pre{
     text-align:justify;
     color:#141E46;
-    margin-left: 5px;
-    line-height: 22.5px;
+    margin-left: 0.39vw;
+    line-height: 4vh;
     font-family: montserrat;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
-#contact .container{
-    height: 530px;
-    border-radius: 10px;
-    background-color:rgb(119, 232, 255);
-    box-shadow: 1px 4px 2px 2px black;
-}
-#contact .container p{
-    margin-left: 5px;
-    color: #141E46;
-}
-.contact-photo{
-    height: 100px;
-    width: 200px;
-    margin-left: 12px;
-    background-image: url(contact.jpg);
-    background-size: cover;
-}
-#contact .section {
-    display: flex;
-    flex-wrap: wrap;
-    text-align:start;
-    padding: 40px 0;
-}
+
+
+
 .contact-form{
-    padding: 10px 20px;
-    height: 440px;
-    width: 440px;
+    padding: 1.68vh 1.5625vw;
+    height: 90.9495vh;
+    width: 80.375vw;
     display: inline-block;
     text-align: left;
-    background-color:rgb(119, 232, 255);
+    background-color:rgb(242, 241, 241);
     border: 2px sloid black;
     box-shadow: 3px 4px 2px 3px black;
-    border-radius: 5%;
+    border-radius: 13px;
 }
 .contact-form span{
-    color:#037471;
+    color:#012359;
 }
 .contact-form .form{
     color: black;
@@ -283,18 +340,18 @@ pre{
     border: 2px solid black;
     border-radius: 7px;
     box-shadow: 1px 2px 2px 2px grey;
-    height: 70px;
-    width: 350px;
+    height: 7.764vh;
+    width: 27.343vw;
 }
 .contact-form #submit-button{
-    height: 25px;
-    width: 70px;
+    height: 4.201vh;
+    width: 5.468vw;
     background-color:  rgb(216, 234, 244);
     border: 1px solid black;
     color: black;
 }
 textarea{
-    resize: none;
+    resize:none;
 }
 button{
     box-shadow: 1px 1px 1px 1px black;
@@ -313,7 +370,8 @@ span{
     font-family:cursive;
 }
 ::placeholder{
-    color:#506349;
+    color:#232323;
+    font-family:cursive ;
 }
 
 .logo{
@@ -349,6 +407,9 @@ span{
 }
 .fa-x-twitter{
     color:#14171A;
+}
+.fa-code{
+    color: orange;
 }
 html{
     scroll-behavior:smooth;
